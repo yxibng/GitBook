@@ -19,7 +19,9 @@ CMSampleBuffer 会关联一些 attachments， 共 2 类型的 attachments：
 
 #### Uncompressed Video SampleBuffer
 
-![](https://fastly.jsdelivr.net/gh/yxibng/filebed@main/img/images/blog/16702426830571670242682221.png)
+![](https://fastly.jsdelivr.net/gh/yxibng/filebed@main/img/images/blog/16702512138811670251213805.png) Figure 1 Uncompressed Video Frame
+
+
 
 通过 [AVCaptureSession](https://developer.apple.com/documentation/avfoundation/avcapturesession?language=objc) 采集摄像头得到保存 Video 数据的 CMSampleBuffer。
 
@@ -111,7 +113,9 @@ if let orientationAttachment = CMGetAttachment(sampleBuffer, key: RPVideoSampleO
 
 #### Compressed Video SampleBuffer
 
-![](https://fastly.jsdelivr.net/gh/yxibng/filebed@main/img/images/blog/16702426320591670242631892.png)
+![](https://fastly.jsdelivr.net/gh/yxibng/filebed@main/img/images/blog/16702509408141670250940260.png) Figure 2 Compressed Video Frame
+
+
 
 使用 [Video Toolbox](https://developer.apple.com/documentation/videotoolbox?language=objc) 可以 yuv, rgb 视频帧编码成 h264， h265，编码后的视频帧 SampleBuffer 的形式输出。
 
@@ -120,6 +124,10 @@ if let orientationAttachment = CMGetAttachment(sampleBuffer, key: RPVideoSampleO
 ### Audio SampleBuffer
 
 #### Uncompressed Audio SampleBuffer
+
+![](https://fastly.jsdelivr.net/gh/yxibng/filebed@main/img/images/blog/16702512368141670251236315.png) Figure 3 Uncompressed Audio PCM
+
+
 
 通过 [AVCaptureSession](https://developer.apple.com/documentation/avfoundation/avcapturesession?language=objc) 采集麦克风数据得到保存 Audio 数据的 CMSampleBuffer。
 
